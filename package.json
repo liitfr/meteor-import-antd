@@ -1,0 +1,37 @@
+{
+  "name": "meteor-import-antd",
+  "version": "1.0.0",
+  "description": "A workaround for whom wants to use antd with meteor",
+  "license": "MIT",
+  "main": "lib/index",
+  "module": "lib/index.mjs",
+  "keywords": [
+    "meteor",
+    "antd",
+    "babel-plugin-import"
+  ],
+  "bugs": {
+    "url": "https://github.com/liitfr/meteor-import-antd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liitfr/meteor-import-antd.git"
+  },
+  "homepage": "https://github.com/liitfr/meteor-import-antd#readme",
+  "author": {
+    "email": "hello@liit.fr",
+    "name": "liitfr"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint lib/*.{js,mjs} test/*.js",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "rollup": "^0.53.3",
+    "standard": "^12.0.1"
+  },
+  "peerDependencies": {
+    "antd": "^3.11.6"
+  }
+}
