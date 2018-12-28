@@ -23,9 +23,8 @@
     "name": "liitfr"
   },
   "scripts": {
-    "build": "rollup -c",
     "lint": "eslint lib/*.{js,mjs} test/*.js",
-    "prepublish": "npm run build"
+    "prepublishOnly": "rollup -c"
   },
   "devDependencies": {
     "rollup": "^0.53.3",
