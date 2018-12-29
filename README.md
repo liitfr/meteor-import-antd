@@ -9,5 +9,5 @@ please refer to this `meteor/babel` [issue](https://github.com/meteor/babel/issu
 ## How to use it ?
 
 ```
-import { Skeleton } from 'meteor-import-antd';
+import Skeleton from 'meteor-import-antd/Skeleton';
 ```

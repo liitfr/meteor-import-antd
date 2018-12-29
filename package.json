@@ -3,8 +3,7 @@
   "version": "1.0.2",
   "description": "A workaround for whom wants to use antd with meteor",
   "license": "MIT",
-  "main": "lib/index",
-  "module": "lib/index.mjs",
+  "main": "dist/index.js",
   "keywords": [
     "meteor",
     "antd",
@@ -23,14 +22,17 @@
     "name": "liitfr"
   },
   "scripts": {
-    "lint": "eslint lib/*.{js,mjs} test/*.js",
-    "prepublishOnly": "rollup -c"
+    "build": "rollup -c",
+    "lint": "standard src/*.js",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
+    "globby": "^8.0.1",
     "rollup": "^0.53.3",
     "standard": "^12.0.1"
   },
   "peerDependencies": {
     "antd": "^3.11.6"
-  }
+  },
+  "dependencies": {}
 }

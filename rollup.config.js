@@ -1,9 +1,11 @@
-import pkg from './package.json'
+const globby = require('globby');
 
-export default {
-  input: pkg.module,
+const configs = globby.sync('src/*.js').map(inputFile => ({
+  input: inputFile,
   output: {
-    file: `${pkg.main}.js`,
-    format: 'cjs'
+    file: inputFile.replace('src', 'dist'),
+    format: 'cjs',
   }
-}
+}));
+
+export default configs;
