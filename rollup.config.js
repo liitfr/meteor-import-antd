@@ -6,7 +6,6 @@ const configs = globby.sync('src/*.js').map(inputFile => ({
     file: inputFile.replace('src/', ''),
     format: 'cjs',
     interop: false,
-    compact: true,
   }
 }));
 

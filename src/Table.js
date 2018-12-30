@@ -1,4 +1,4 @@
-import 'antd/lib/table/style/css'
+import 'antd/lib/table/style/index.css'
 import Table from 'antd/lib/table'
 
 export default Table
