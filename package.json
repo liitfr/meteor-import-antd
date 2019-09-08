@@ -1,6 +1,6 @@
 {
   "name": "meteor-import-antd",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A workaround for whom wants to use antd with meteor",
   "license": "MIT",
   "main": "index.js",
